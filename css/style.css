@@ -1,0 +1,1089 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Barlow Condensed', serif;
+    font-size: 1.18rem;
+    color: #fff; 
+}
+header {
+    height: 15vh;
+    padding-top: 2rem;
+}
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamber> img {
+    width: 40px;
+    height: 40px;
+}
+.list_items {
+    position: absolute;
+    background-color: #0B0D19;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    left: 0;
+    top: 0;
+    transform: translateX(-200%);
+    transition: all 550ms ease-in;
+}
+.open {
+    transform: translateX(0);
+    transition: all 550ms ease-in;
+}
+.close_btn {
+    margin: 4rem auto;
+    width: fit-content;
+    border: dashed 1px #fff;
+    padding: 10px;
+}
+.close_btn > img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+ul {
+    display: block;
+    list-style: none;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+li {
+    margin: 2rem 0;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px dashed #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.page_container_home {
+    background-color: #0e141e;
+    background-image: url("/src/images/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.home_section {
+    width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+}
+.home_title > h2{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.home_title > h1 {
+    font-family: 'Spectral', sans-serif;
+    font-size: 3.5rem;
+    margin: 10px auto 1rem auto;
+    font-weight: 400;
+    letter-spacing: 2px; 
+}
+.home_text > p {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.home_text {
+    margin: 20px auto;
+    margin-bottom: 4rem;
+}
+footer {
+    padding-bottom: 3rem;
+}
+.exp > button {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: none;
+    color: #0B0D19;
+    font-family: 'Spectral', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 550ms ease-in-out;
+}
+.exp > button:hover {
+    transform: scale(1.3);
+}
+.page_container_des {
+    background: #0e141e url("/src/images/destination/background-destination-mobile.jpg") no-repeat
+    center center/cover;
+}
+.destination_section {
+    text-align: center;
+}
+.planet_img > img{
+    width: 230px;
+    height: 230px;
+    margin-left: calc(50% - 115px);
+    object-fit: cover;
+    display: none;
+    margin-bottom: 2rem;
+    animation: myRotate 10s infinite;
+}
+@keyframes myRotate {
+    0% {
+        transform: rotate(0deg);
+    } 100% {
+        transform: rotate(360deg);
+    }
+}
+.title_items > h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 400;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+.title_items > h1 > span {
+    color: rgb(144, 144, 144);
+}
+.planet_img > .show {
+    display: block;
+}
+.planet_names  {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+.planet_names > span {
+    font-size: 1.34rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 10px;
+    cursor: pointer;
+    padding-bottom: 8px;
+}
+.planet_names >.focus {
+    border-bottom: 3.5px solid #fff;
+}
+.planet_infos {
+    width: 85%;
+    margin: auto;
+}
+.planet_infos > div {
+    display: none;
+}
+.planet_infos > div > h2 {
+    font-family: 'Spectral', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+}
+.planet_infos > div > p {
+    font-family: sans-serif;
+    font-size: 1.45rem;
+    line-height: 1.45;
+    margin: 2rem 0 3rem 0;
+}
+.planet_infos > .sh {
+    display: block;
+}
+.inf {
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+    margin-bottom: 2rem;
+}
+.inf th,
+td {
+    padding: 10px 20px;
+}
+th {
+    font-size: 1.35rem;
+    font-weight: 300;
+    letter-spacing: .12px;
+}
+td {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Spectral', sans-serif;
+}
+.page_container_crew {
+    background: #0e141e url("/src/images/crew/background-crew-mobile.jpg") no-repeat
+    center center/cover;
+}
+.crew_section {
+    text-align: center;
+}
+.title_cr > h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 400;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+.crew_image {
+    border-bottom: 1px dashed rgb(202, 202, 202);
+    width: 90%;
+    margin: auto;
+    max-height: 700px;
+}
+.crew_image > img {
+    max-width: 260px;
+    margin-left: calc(50% - 130px);
+    display: none;
+}
+.crew_image > .show_cr {
+    display: block;
+}
+.buttons > button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(116, 116, 116);
+    border: none;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.buttons > .focus_crew {
+    background-color: #fff;
+}
+.card_info  {
+    width: 90%;
+    display: none;
+    margin: 2rem auto;
+    text-align: justify;
+    font-family: 'Spectral', sans-serif;
+}
+.show_card {
+    display: block;
+}
+.job_title {
+    text-align: center;
+}
+.job_title > h3 {
+    color:rgb(179, 179, 179);
+    font-size: 24px;
+    word-spacing: 2px;
+    font-weight: 400;
+}
+.job_title > h2 {
+    font-weight: 600;
+    word-spacing: 3px;
+    margin: 4px 0 20px 0;
+}
+.job_description > p {
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.page_container_technology {
+    background: #0e141e url("/src/images/technology/background-technology-mobile.jpg") no-repeat
+    center center/cover;
+}
+.tech_images_desk {
+    display: none;
+}
+.titles_tech {
+    text-align: center;
+}
+.titles_tech > h1 {
+    margin: 2rem 0;
+    font-weight: 400;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+.tech_images {
+    width: 90%;
+    margin: auto;
+}
+.tech_images > img {
+    display: none;
+    width: 100%;
+    margin: 25px 0;
+    border-radius: 5px;
+}
+.tech_images > .show_tech {
+    display: block;
+}
+.tech_btns {
+    text-align: center;
+}
+.tech_btns > button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.tech_btns > .focus_tech {
+    background-color: #fff;
+    color: #0B0D19;
+}
+.tech_info {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.tech_card {
+    display: none;
+    margin: 2rem 0;
+}
+.show_tech_card {
+    display: block;
+    text-align: center;
+}
+.tech_name > h3 {
+    color: rgb(179, 179, 179);
+    font-weight: 400;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.tech_name > h2 {
+    font-family: 'Spectral', sans-serif;
+    margin: 5px 0 20px 0;
+    font-weight: 600;
+    font-size: 28px;
+}
+.tech_description > p {
+    text-align: justify;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+}
+@media screen and (max-width: 200px) {
+    .hamber > img {
+        width: 15px;
+        height: 15px;
+    }
+    .logo > img {
+        width: 15px;
+        height: 15px;
+    }
+    a {
+        font-size: 12px;
+        padding: 0px;
+        border: none;
+    }
+    .close_btn {
+        padding: 0px;
+        margin: auto;
+        border: none;
+    }
+    .close_btn > img {
+        width: 10px;
+        height: 10px;
+        margin: 0;
+    }
+    .home_section {
+        width: 100%;
+    }
+    .home_title > h2 {
+        font-size: 12px;
+    }
+    .home_title > h1 {
+        font-size: 26px;
+        font-weight: 800;
+    }
+    .home_text {
+        padding: 20px 20px 5rem 20px;
+    }
+    .home_text > p {
+        font-size: 12px;
+    }
+    .exp > button {
+        width: 80px;
+        height: 80px;
+        font-size: 15px;
+    }
+    .planet_img > img {
+        width: 80px;
+        height: 80px;
+        margin-left: calc(50% - 40px);
+    }
+    .destination_section {
+        width: 100%;
+    }
+    .title_items > h1 {
+        font-size: 15px;
+    }
+    .planet_names > span {
+        font-size: 8px;
+    }
+    .planet_infos > .pla > h2 {
+        font-size: 14px;
+    }
+
+    .planet_infos > .pla > p {
+        font-size: 9px;
+    }
+    td {
+        font-size: 10px;
+    }
+    th {
+        font-size: 10px;
+    }
+    .crew_image > img {
+        max-width: 100px;
+        margin-left: calc(50% - 50px);
+    }
+    .title_cr > h1 {
+        font-size: 14px;
+    }
+    .job_title > h3 {
+        font-size: 12px;
+    }
+    .job_title > h2 {
+        font-size: 15px;
+    }
+    .job_description > p{
+        font-size: 10px;
+    }
+    .titles_tech > h1 {
+        font-size: 14px;
+    }
+    .tech_btns > button {
+        width: 30px;
+        height: 30px;
+    }
+    .tech_name > h3 {
+        font-size: 12px;
+    }
+    .tech_name > h2 {
+        font-size: 14px;
+    }
+    .tech_description > p {
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 200px) {
+      .hamber > img {
+        width: 30px;
+        height: 30px;
+    }
+    .logo > img {
+        width: 30px;
+        height: 30px;
+    }
+    a {
+        font-size: 18px;
+        padding: 0px;
+        border: 1px dashed #fff;
+        padding: 5px 10px;
+    }
+    .close_btn {
+        padding: 0px;
+        margin: auto;
+        border: none;
+    }
+    .close_btn > img {
+        width: 30px;
+        height: 30px;
+        margin: 2rem auto;
+        border: 1px dashed #fff;
+        padding: 5px;
+    }
+    .home_text {
+        padding: 20px auto 5rem auto;
+    }
+    .home_text > p {
+        font-size: 14px;
+    }
+    .exp > button {
+        width: 100px;
+        height: 100px;
+        font-size: 14px;
+    }
+    .exp {
+        margin-top: 7rem;
+    }
+    .planet_img > img {
+        width: 120px;
+        height: 120px;
+        margin-left: calc(50% - 60px);
+    }
+    .destination_section {
+        width: 100%;
+    }
+    .title_items > h1 {
+        font-size: 18px;
+    }
+    .planet_names > span {
+        font-size: 9px;
+    }
+    .planet_infos > .pla > h2 {
+        font-size: 25px;
+    }
+    .planet_infos > .pla > p {
+        font-size: 12px;
+    }
+    td {
+        font-size: 12px;
+    }
+    th {
+        font-size: 12px;
+    }
+    .crew_image > img {
+        max-width: 150px;
+        margin-left: calc(50% - 75px);
+    }
+    .title_cr > h1 {
+        font-size: 20px;
+    }
+    .job_title > h2 {
+        font-size: 20px;
+    }
+
+    .job_title > h3 {
+        font-size: 18px;
+    }
+    .job_description > p {
+        font-size: 15px;
+    }
+    .titles_tech > h1 {
+        font-size: 20px;
+    }
+    .tech_btns > button {
+        width: 35px;
+        height: 35px;
+    }
+    .tech_name > h3 {
+        font-size: 16px;
+    }
+    .tech_name > h2 {
+        font-size: 18px;
+    }
+    .tech_description > p {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 400px) {
+    .hamber > img{
+        width: 50px;
+        height: 50px;
+    }
+    .logo > img {
+        width: 50px;
+        height: 50px;
+    }
+    .close_btn > img {
+        width: 50px;
+        height: 50px;
+    }
+    a {
+        font-size: 25px;
+    }
+    .home_title > h1 {
+        font-size: 4rem;
+    }
+    .home_title > h2 {
+        font-size: 20px;
+    }
+    .home_text > p {
+        font-size: 22px;
+    }
+    .exp > button {
+        width: 140px;
+        height: 140px;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .planet_img > img {
+        width: 200px;
+        height: 200px;
+        margin-left: calc(50% - 100px);
+    }
+    .destination_section {
+        width: 90%;
+        margin: auto;
+    }
+    .title_items > h1 {
+        font-size: 19px;
+        margin-top: 5rem;
+    }
+    .planet_names > span {
+        font-size: 20px;
+    }
+    .planet_infos > .pla > h2 {
+        font-size: 3rem;
+    }
+    .planet_infos > .pla > p {
+        font-size: 16px;
+        text-align: start;
+    }
+    td {
+        font-size: 20px;
+    }
+    th {
+        font-size: 20px;
+    }
+    .crew_image > img {
+        max-width: 200px;
+        margin-left: calc(50% - 100px);
+    }
+    .job_title > h2 {
+        font-size: 28px;
+    }
+    .job_description > p {
+        font-size: 20px;
+    }
+    .titles_tech > h1 {
+        font-size: 25px;
+    }
+    .tech_btns > button {
+        width: 50px;
+        height: 50px;
+    }
+    .tech_name > h3 {
+        font-size: 20px;
+    }
+    .tech_name > h2 {
+        font-size: 24px;
+    }
+    .tech_description > p {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 530px) {
+    .home_title > h2 {
+        font-size: 22px;
+    }
+    .home_title > h1 {
+        font-size: 5rem;
+    }
+    .home_text > p {
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .exp > button {
+        width: 200px;
+        height: 200px;
+        font-size: 2rem;
+        margin-top: 10rem;
+    }
+    .planet_img > img {
+        width: 240px;
+        height: 240px;
+        margin-left: calc(50% - 120px);
+    }
+    .destination_section {
+        width: 100%;
+    }
+    .title_items > h1 {
+        font-size: 25px;
+    }
+    .planet_names > span {
+        font-size: 28px;
+    }
+    .planet_infos > .pla > h2 {
+        font-size: 4rem;
+    }
+    .planet_infos > .pla > p {
+        font-size: 20px;
+    }
+    td {
+        font-size: 25px;
+    }
+    th {
+        font-size: 25px;
+    }
+    .title_cr > h1 {
+        font-size: 36px;
+    }
+    .crew_image > img {
+        max-width: 400px;
+        margin-left: calc(50% - 200px);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        padding: 0;
+    }
+    .close_btn,
+    .hamber {
+        display: none;
+    }
+    .list_items {
+        position: static;
+    }
+    ul {
+        display: flex;
+        position: static;
+        left: auto;
+        top: auto;
+        transform: none;
+        background-color: #131522;
+        padding: 20px;
+    }
+    nav {
+        display: flex;
+        position: relative;
+        width: 100%;
+        padding-left: 20px;
+    }
+    a {
+        border: none;
+        font-size: 22px;
+        letter-spacing: 3px;
+        font-weight: 500;
+    }
+    .list_items {
+        transform: translate(0);
+    }
+    .page_container_home {
+        background-image: url("/src/images/home/background-home-tablet.jpg");
+    }
+    .home_text > p{
+        font-size: 38px;
+    }
+    .home_title > h2 {
+        font-size: 3rem;
+        font-weight: 200;
+    }
+    .home_title > h1 {
+        font-size: 9rem;
+    }
+    .exp > button {
+        width: 300px;
+        height: 300px;
+        font-size: 3rem;
+    }
+    .page_container_des {
+        background-image: url("/src/images/destination/background-destination-tablet.jpg");
+    }
+    .planet_img > img {
+        width: 300px;
+        height: 300px;
+        margin-left: calc(50% - 150px);
+    }
+    .title_items > h1 {
+        font-size: 32px;
+        margin-top: 10rem;
+    }
+    .planet_names > span {
+        font-size: 32px;
+    }
+    .planet_infos > .pla > h2 {
+        font-size: 5rem;
+    }
+    .planet_infos > .pla > p {
+        font-size: 25px;
+    }
+    td {
+        font-size: 27px;
+    }
+    th {
+        font-size: 27px;
+    }
+    .page_container_crew {
+        background-image: url('/src/images/crew/background-crew-tablet.jpg');
+    }
+    .crew_section {
+        margin-top: 10rem;
+    }
+    .job_title > h2 {
+        font-size: 45px;
+    }
+    
+    .job_title > h3 {
+        font-size: 35px;
+    }
+    .job_description > p {
+        font-size: 28px;
+    }
+    .page_container_technology {
+        background-image: url("/src/images/technology/background-technology-tablet.jpg");
+    }
+    .technology_section {
+        margin-top: 10rem;
+    }
+    .titles_tech > h1 {
+        font-size: 32px;
+    }
+    .tech_name > h3 {
+        font-size: 28px;
+    }
+    .tech_name > h2 {
+        font-size: 42px;
+    }
+    .tech_description > p {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .logo > img {
+        width: 90px;
+        height: 90px;
+    }
+    .logo {
+        padding-left: 35px;
+    }
+    nav {
+        position: relative;
+        padding: 20px 0;
+    }
+    .list_items::after {
+        content: "";
+        position: absolute;
+        width: 20vw;
+        height: 3px;
+        background-color: rgba(162, 168, 190, 0.7);
+        top: 50%;
+        right: 93%;
+        z-index: 2;
+    }
+    ul {
+        background: transparent;
+        backdrop-filter: blur(5px);
+    }
+    a {
+        font-size: 28px;
+    }
+    ul > .focus_list {
+        border: none;
+        border-bottom: 3px solid #fff;
+    }
+    .list_items {
+        background: rgb(69 75 98 / 70%);
+        padding-left: 5rem;
+        padding-right: 1rem;
+    }
+    a:hover {
+        border: none;
+        border-radius: 0;
+        border-top: 3px solid #fff;
+    }
+    .page_container_home {
+        background-image: url("/src/images/home/background-home-desktop.jpg");
+    }
+    .home_section {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .home_info {
+        width: 50%;
+        margin-top: 15rem;
+        margin-bottom: 5rem;
+    }
+    .home_text > p {
+        text-align: start;
+        font-size: 28px;
+        line-height: 1.8;
+    }
+    .home_title {
+        text-align: start;
+    }
+    .exp > button{
+        width: 280px;
+        height: 280px;
+    }
+    .page_container_des {
+        background-image: url("/src/images/destination/background-destination-desktop.jpg");
+    }
+    .destination_section {
+        display: flex;
+        align-items: center;
+        margin-top: 10rem;
+    }
+    .title_text {
+        width: 45%;
+    }
+    .title_items {
+        width: 55%;
+        transform: translateY(-9rem);
+    }
+    .planet_img > img {
+        width: 500px;
+        height: 500px;
+        margin-left: 5rem;
+        margin-top: 10rem;
+    }
+    .title_items > h1 {
+        font-size: 3rem;
+        margin-top: 10rem;
+    }
+    .planet_names > span {
+        font-size: 32px;
+        text-align: start;
+    }
+    .planet_infos > .pla > h2 {
+        font-size: 8rem;
+    }
+    .planet_infos > .pla > p {
+        font-size: 28px;
+    }
+    td {
+        font-size: 28px;
+    }
+    th {
+        font-size: 28px;
+    }
+    .page_container_crew {
+        background-image: url("/src/images/crew/background-crew-desktop.jpg");
+    }
+    .crew_image {
+        border: none;
+        grid-row-start: 1;
+        grid-row-start: span 2;
+        align-self: flex-end;
+        position: absolute;
+        right: 0;
+        width: fit-content;
+        padding-right: 35px;
+    }
+    .crew_image > img {
+        max-width: 580px;
+        margin: 0;
+    }
+    .crew_section {
+        margin-top: 15rem;
+        padding: auto 4rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 80% 10%;
+    }
+    .card_info {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .buttons {
+        grid-row-start: -2;
+        margin-left: 5px;
+        text-align: start;
+    }
+    .buttons > button {
+        width: 25px;
+        height: 25px;
+        margin-left: 35px;
+    }
+    .title_cr > h1 {
+        margin-left: 40px;
+        text-align: start;
+        font-size: 4rem;
+    }
+    .job_title  {
+        text-align: start;
+    }
+    .card_info {
+        margin-top: 200px;
+    }
+    .job_title > h3 {
+        font-size: 2.5rem;
+    }
+    .job_title > h2 {
+        font-size: 3.3rem;
+    }
+    .job_description > p {
+        font-size: 34px;
+    }
+    .page_container_technology {
+        background-image: url("/src/images/technology/background-technology-desktop.jpg");
+    }
+    .technology_section {
+        margin-top: 20rem;
+        width: 95%;
+        margin: 20px auto 3rem auto;
+    }
+    .tech_btns {    
+        display: grid;
+        align-self: center;
+    }
+    .tech_btns > button {
+        margin: 20px auto;
+        width: 100px;
+        height: 100px;
+        font-size: 45px;
+    }
+    .titles_tech > h1 {
+        text-align: start;
+        padding-left: 30px;
+        margin-bottom: 4rem;
+        margin-top: 8rem;
+        font-size: 45px;
+    }
+    .btn_card {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .img_grid {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .tech_images {
+        grid-column-start: 2;
+        width: fit-content;
+    }
+    .tech_images > img {
+        max-width: 440px;
+        border-radius: 0;
+    }
+    .tech_name {
+        text-align: start;
+    }
+    .tech_name > h3  {
+        font-size: 30px;
+    }
+    .tech_name > h2 {
+        font-size: 3.3rem;
+    }
+    .tech_description > p {
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .list_items::after {
+        width: 280px;
+    }
+    a {
+        font-size: 28px;
+    }
+    ul > li {
+        margin-left: 20px;
+    }
+    .home_text > p {
+        font-size: 32px;
+    }
+    .home_title > h2 {
+        font-size: 3.4rem;
+    }
+    .home_title > h1 {
+        font-size: 10rem;
+    }
+    .exp > button {
+        width: 320px;
+        height: 320px;
+        font-size: 3.4rem;
+    }
+    .title_cr > h1 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+    .job_title > h2 {
+        font-size: 3.7rem;
+    }
+    .crew_image > img {
+        max-width: 600px;
+    }
+    .tech_description > p {
+        font-size: 28px;
+    }
+    .tech_images > img {
+        max-width: 400px;
+    }
+};

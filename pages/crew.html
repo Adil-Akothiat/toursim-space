@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crew</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body class="page_container_crew">
+         <!--header start-->
+         <header>
+            <nav>
+                <div class="logo">
+                    <img src="/src/icons/logo.svg" alt="space_logo">
+                </div>
+                <div class="nav_items">
+                    <div class="hamber">
+                        <img src="/src/icons/icon-hamburger.svg" alt="hamber">
+                    </div>
+                    <div class="list_items">
+                        <div class="close_btn">
+                            <img src="/src/icons/icon-close.svg" alt="close">
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="an_focus" href="/index.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="/pages/destination.html">DESTINATION</a>
+                            </li>
+                            <li>
+                                <a href="/pages/crew.html">CREW</a>
+                            </li>
+                            <li>
+                                <a href="/pages/technology.html">TECHNOLOGY</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <!--header end-->
+    <section class="crew_section">
+        <div class="title_cr">
+            <h1>
+                <span style="color: rgb(144, 144, 144);">02</span> MEET YOUR CREW
+            </h1>
+        </div>
+        <div class="crew_image">
+            <img class="show_cr" src="/src/images/crew/image-douglas-hurley.png" alt="hurley">
+            <img src="/src/images/crew/image-mark-shuttleworth.png" alt="mark">
+            <img src="/src/images/crew/image-victor-glover.png" alt="glover">
+            <img src="/src/images/crew/image-anousheh-ansari.png" alt="anousheh">
+        </div>
+        <div class="buttons">
+            <button data-name="hurley" class="focus_crew"></button>
+            <button data-name="mark"></button>
+            <button data-name="glover"></button>
+            <button data-name="anousheh"></button>
+        </div>
+        <div class="card_info show_card" data-name="hurley">
+            <div class="job_title">
+                <h3>
+                    COMMANDER
+                </h3>
+                <h2>
+                    DOUGLAS HURLEY
+                </h2>
+            </div>
+            <div class="job_description">
+                <p>
+                    Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+                </p>
+            </div>
+        </div>
+        <div class="card_info" data-name="mark">
+            <div class="job_title">
+                <h3>
+                    MISSION SPECIALIST
+                </h3>
+                <h2>
+                    MARK SHUTTLEWORTH
+                </h2>
+            </div>
+            <div class="job_description">
+                <p>
+                    Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.
+                </p>
+            </div>
+        </div>
+        <div class="card_info" data-name="glover">
+            <div class="job_title">
+                <h3>
+                    PILOT
+                </h3>
+                <h2>
+                    VICTOR GLOVER
+                </h2>
+            </div>
+            <div class="job_description">
+                <p>
+                    Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.
+                </p>
+            </div>
+        </div>
+        <div class="card_info" data-name="anousheh">
+            <div class="job_title">
+                <h3>
+                    FLIGHT ENGINEER
+                </h3>
+                <h2>
+                    ANOUSHEH ANSARI
+                </h2>
+            </div>
+            <div class="job_description">
+                <p>
+                    Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--script file-->
+    <script src="/js/script.js"></script>
+    <script src="/js/crew.js"></script>
+</body>
+</html>
