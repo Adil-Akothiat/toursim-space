@@ -84,16 +84,16 @@ for(i=0; i < techBtn.length; i++) {
 function addNum() {
     if(document.body.clientWidth >= 1200) {
         document.querySelectorAll("ul li")[0].innerHTML = `
-        <a class="an_focus" href="/index.html"><span style="color: rgb(144, 144, 144);">01 </span>HOME</a>
+        <a class="an_focus" href="/index.html"><span style="color: rgb(144, 144, 144);">00 </span>HOME</a>
         `;
         document.querySelectorAll("ul li")[1].innerHTML = `
-        <a class="an_focus" href="/pages/destination.html"><span style="color: rgb(144, 144, 144);">02 </span>DESTINATION</a>
+        <a class="an_focus" href="/pages/destination.html"><span style="color: rgb(144, 144, 144);">01 </span>DESTINATION</a>
         `;
         document.querySelectorAll("ul li")[2].innerHTML = `
-        <a class="an_focus" href="/pages/crew.html"><span style="color: rgb(144, 144, 144);">03 </span>CREW</a>
+        <a class="an_focus" href="/pages/crew.html"><span style="color: rgb(144, 144, 144);">02 </span>CREW</a>
         `;
         document.querySelectorAll("ul li")[3].innerHTML = `
-        <a class="an_focus" href="/pages/technology.html"><span style="color: rgb(144, 144, 144);">04 </span>TECHNOLOGY</a>
+        <a class="an_focus" href="/pages/technology.html"><span style="color: rgb(144, 144, 144);">03 </span>TECHNOLOGY</a>
         `;
     }else {
         document.querySelectorAll("ul li")[0].innerHTML = `
